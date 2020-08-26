@@ -136,7 +136,7 @@ input::placeholder {
   background-size: cover;
   height: 11em;
   background-position: center;
-  margin-bottom: -6em;
+  margin-bottom: -15em;
 }
 
 .content-shadow {
@@ -402,6 +402,10 @@ li img {
 
   .right-content {
     flex: 50%;
+  }
+
+  .curve {
+    margin-bottom: -6em;
   }
 
   .footer-col {
