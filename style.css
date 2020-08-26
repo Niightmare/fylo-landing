@@ -120,7 +120,7 @@ input::placeholder {
   text-align: center;
   justify-content: center;
   flex: 50%;
-  padding: 5em;
+  /* padding: 5em; */
   /* border: 1px solid darkcyan; */
 }
 
