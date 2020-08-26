@@ -40,11 +40,11 @@ body {
   width: 6.5rem;
   /* border: 1px solid darkcyan; */
 }
-
+/* 
  h1,
 p {
   border: 1px solid lawngreen;
-} 
+}  */
 
 .menu {
   font-family: "Raleway", sans-serif;
@@ -74,7 +74,7 @@ p {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .left-content h1 {
@@ -82,7 +82,7 @@ p {
   font-size: 1.5em;
   font-weight: 700;
   line-height: 1.5em;
-  border: 1px solid darkcyan;
+  /* border: 1px solid darkcyan; */
 }
 
 .left-content > a {
