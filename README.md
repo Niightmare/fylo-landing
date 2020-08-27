@@ -66,3 +66,334 @@ A massive thank you to our community sponsors!
 - [Diversify Tech](https://bit.ly/fem-diversify-tech) is an amazing resource for underrepresented people in tech. The site features job listings for anyone seeking new opportunities. The resource section is also full of useful links to dive into!
 - [Dracula PRO](https://bit.ly/fem-dracula) is a beautiful dark theme to help keep you focused and productive while you code. The theme isn't just for your editor either. You can also apply it to your most-used apps like your terminal and even Slack!
 # fylo-landing
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="main.js" defer></script>
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img class="logo" src="images/logo.svg" alt="Ping Logo" />
+        <h2>We are launching <strong>soon!</strong></h2>
+        <p>Subscribe and get notified</p>
+        <form class="notify-form" novalidate>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            aria-label="Email Address"
+            placeholder="Your email address..."
+            required
+          />
+          <p class="message">Please provide a valid email address</p>
+          <button type="submit" id="btn-submit" class="btn btn-blue">
+            Notify Me
+          </button>
+        </form>
+
+        <img
+          src="images/illustration-dashboard.png"
+          alt="illustration-dashboard"
+          class="dashboard"
+        />
+      </div>
+
+      <footer>
+        <div class="socials">
+          <div class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <p class="copyright">© Copyright Ping. All rights reserved.</p>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">NI1GHTMARE</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+
+
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  color: var(--Very-Dark-Blue);
+  /* border: 2px dotted orange; */
+}
+
+.container {
+  padding: 3em 1em 0 1em;
+  text-align: center;
+  /* border: 1px solid green; */
+}
+
+/* .content {
+  border: 1px solid red;
+} */
+
+.logo {
+  margin-bottom: 1em;
+  width: 4em;
+  /* border: 1px solid green; */
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--Gray);
+  /* border: 1px solid blue; */
+}
+
+h2 strong {
+  color: initial;
+}
+
+p {
+  font-size: 0.7em;
+  /* border: 1px solid red; */
+}
+
+.notify-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  /* border: 1px solid blue; */
+}
+
+.notify-form input {
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 25px;
+  padding: 1em 2em;
+  outline: none;
+}
+
+input::placeholder {
+  font-weight: 300;
+  color: var(--Pale-Blue);
+}
+
+input:focus {
+  border: 2px solid var(--Pale-Blue);
+}
+
+.message {
+  display: none;
+  margin-top: 0;
+  color: var(--Light-Red);
+  font-style: italic;
+  font-size: 12px;
+  padding-top: 0.5em;
+}
+
+.error {
+  display: block;
+}
+
+.input-error {
+  border: 1px solid var(--Light-Red) !important;
+}
+
+.btn {
+  margin-top: 1em;
+  padding: 1em 2em;
+  border-radius: 25px;
+  box-shadow: 1px 10px 10px #507ef32f;
+  font-size: 0.7em;
+  border: none;
+  outline: none;
+}
+
+.btn-blue {
+  color: white;
+  background-color: var(--Blue);
+}
+
+.btn-blue:hover {
+  background-color: #658bec;
+}
+
+.dashboard {
+  max-width: 100%;
+  margin-bottom: 5em;
+  /* border: 1px solid darkcyan; */
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid fuchsia; */
+}
+
+.social-icon {
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 0.5em;
+  border: 1px solid var(--Pale-Blue);
+}
+
+.social-icon:hover {
+  background-color: var(--Blue);
+}
+
+.social-icon:hover > i {
+  color: white;
+}
+
+.copyright {
+  color: var(--Gray);
+}
+
+i {
+  color: var(--Blue);
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: underline dotted;
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: var(--Blue);
+}
+
+@media screen and (min-width: 800px) {
+  .logo {
+    width: auto;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .notify-form {
+    flex-direction: initial;
+    justify-content: space-between;
+  }
+
+  .notify-form input {
+    width: 72%;
+  }
+
+  .message {
+    position: absolute;
+    margin: 3.6em 0 0 2.5em;
+  }
+
+  .btn {
+    margin-top: 0;
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    align-items: center;
+  }
+  .btn {
+    width: 20%;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 40em;
+  }
+}
+
+
+
+function validateEmail(email) {
+    let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return regex.test(String(email).toLowerCase());
+  }
+  
+  function validate() {
+    let email = document.querySelector("#email");
+    let message = email.nextElementSibling;
+  
+    !validateEmail(email.value)
+      ? (email.classList.add("input-error"),
+        message.classList.add("error"))
+      : (email.classList.remove("input-error"),
+        message.classList.remove("error"));
+  }
+  
+  let submitBtn = document.getElementById("btn-submit");
+  
+  submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    validate();
+  });
+  
+
+
